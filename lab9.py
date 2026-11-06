@@ -9,7 +9,7 @@ mensagens = [
 
 
 # Rota GET: Retorna a lista de recursos em formato JSON
-@app.route("/api/v1/hello", methods=["GET"])
+@app.route("/items", methods=["GET"])
 def get_hello():
     return jsonify({"status": "success", "data": mensagens}), 200
 
